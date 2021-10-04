@@ -1,11 +1,11 @@
 package it.unibo.scl.es.student;
 
-public class WekaClassifier {
+public class WeakClassifier {
 	public static double classify(Object[] i)
     throws Exception {
 
     double p = Double.NaN;
-    p = WekaClassifier.N5f41ab780(i);
+    p = WeakClassifier.N5f41ab780(i);
     return p;
   }
   static double N5f41ab780(Object []i) {
@@ -13,9 +13,9 @@ public class WekaClassifier {
     if (i[10] == null) {
       p = 0;
     } else if (((Double) i[10]).doubleValue() <= 0.6839229) {
-    p = WekaClassifier.N506084231(i);
+    p = WeakClassifier.N506084231(i);
     } else if (((Double) i[10]).doubleValue() > 0.6839229) {
-    p = WekaClassifier.N4c583f4c4(i);
+    p = WeakClassifier.N4c583f4c4(i);
     } 
     return p;
   }
@@ -24,9 +24,9 @@ public class WekaClassifier {
     if (i[16] == null) {
       p = 0;
     } else if (((Double) i[16]).doubleValue() <= 0.29620638) {
-    p = WekaClassifier.N70833f0e2(i);
+    p = WeakClassifier.N70833f0e2(i);
     } else if (((Double) i[16]).doubleValue() > 0.29620638) {
-    p = WekaClassifier.N38a0e9d73(i);
+    p = WeakClassifier.N38a0e9d73(i);
     } 
     return p;
   }

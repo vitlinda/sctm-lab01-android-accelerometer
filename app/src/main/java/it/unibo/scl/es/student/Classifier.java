@@ -37,7 +37,7 @@ public class Classifier {
 			features.calcolaY(y);
 			features.calcolaZ(z);
 			try {
-				int res = (int) WekaClassifier.classify(features.getFeatures());
+				int res = (int) WeakClassifier.classify(features.getFeatures());
 				if (res == 0)
 					result = "staticoSulTavolo";
 				else if (res == 1)
